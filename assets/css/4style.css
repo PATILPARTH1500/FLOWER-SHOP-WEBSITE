@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('/assets/images/flower.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loginbox {
+    background-color: rgba(144, 241, 184, 0.2);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.loginbox:hover {
+    background-color:rgb(164, 236, 182);;
+    transition: 0.5s ease-in;
+    width:500px;
+}
+
+.loginbox h1 {
+    color: black;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.spacing {
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    margin: 10px 0;
+    width: calc(100% - 30px);
+    font-size: 18px;
+}
+
+.spacing1 {
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px 10px 0;
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.spacing:hover {
+    background-color: gainsboro;
+    transition: 0.5s ease-in-out;
+    border:2px solid orange;
+}
+
+.spacing1:hover {
+    background-color: rgb(187, 185, 185);
+    transition: 0.5s ease-in-out;
+}
+
+.forgot {
+    display: block;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}

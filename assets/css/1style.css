@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    animation: slideDown 1s ease-in-out;
+    border: 2px solid black;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav .right ul {
+    display: flex;
+    padding: 50px;
+    animation-fill-mode: forwards;
+}
+
+nav .right ul li {
+    list-style: none;
+    padding: 14px;
+    font-weight: 1000;
+}
+
+nav .right ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+nav .right ul li a:hover {
+    color: rgb(164, 236, 182);
+    font-size:15px;
+    transition:0.5s ease;
+}
+
+nav .left h1 {
+    padding: 50px;
+    font-weight: 1000;
+}
+
+.shop {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+
+.h1 {
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: zoomIn 2s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.para {
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    /* animation: fadeIn 2s ease-in-out 1s; */
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    background-color: rgb(128, 125, 125);
+    color: white;
+    border-radius: 23px;
+    padding: 13px;
+    border: none;
+    margin: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.btn a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn:hover {
+    color: darkgray;
+    box-shadow: 5px 5px 15px;
+    background-color: rgb(100, 100, 100);
+}
+
+.footer {
+    background-color: rgba(166, 231, 191, 0.8);
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    color: black;
+    position: relative;
+    margin-top: 50px;
+}
+
+.footer h1 {
+    font-size: 24px;
+    font-family: 'Arial Black', sans-serif;
+    margin-bottom: 20px;
+    color: darkgreen;
+}
+
+.footer span {
+    display: block;
+    font-size: 16px;
+    color: darkslategray;
+    margin-bottom: 8px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer span:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.footer .content1, .footer .content2, .footer .content3, .footer .content4 {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.footer .content1, .footer .content2, .footer .content3, .footer .content4:last-child {
+    margin-right: 0;
+}
+
+/* Ensure the footer is placed below the content */
+body, html {
+    height: 100%;
+}
+
+main {
+    min-height: 100vh;
+    margin-bottom: 350px; 
+}
+
+.footer {
+    margin-top: auto;
+}
+
+

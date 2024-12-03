@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/6style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Florist Landing Page 💐</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Landing</a></li>
+                    <li><a href="index.html">Home🏠</a></li>
+                    <li><a href="gallery.html">Gallery📷</a></li>
+                    <li><a href="shop.html">Shop🛍️</a></li>
+                    <li><a href="login.html">Login & Sign Up👥</a></li>
+                    <li><a href="blog.html">Blog📑</a></li>
+                    <li><a href="shoppingcart.html"><img src="shopping-cart.png" alt="shopping cart"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="shopping-cart">
+        <h2>Your Shopping Cart</h2>
+        
+        <div class="cart-item" data-price="25">
+            <img src="/assets/images/rose2.png" alt="Rose Bouquet">
+            <div class="item-details">
+                <h3>Rose Bouquet</h3>
+                <p>Quantity: <input type="number" class="item-quantity" value="1" min="1"></p>
+                <p>Price: $<span class="item-price">25.00</span></p>
+            </div>
+            <div class="item-actions">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+    
+        <div class="cart-item" data-price="40">
+            <img src="/assets/images/lilly2.png" alt="Lily Arrangement">
+            <div class="item-details">
+                <h3>Lily Arrangement</h3>
+                <p>Quantity: <input type="number" class="item-quantity" value="2" min="1"></p>
+                <p>Price: $<span class="item-price">80.00</span></p>
+            </div>
+            <div class="item-actions">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+    
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">105.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <script src="/assets/js/6script.js"></script>
+</body>
+</html>
